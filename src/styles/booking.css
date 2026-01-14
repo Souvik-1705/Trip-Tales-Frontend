@@ -1,0 +1,78 @@
+.booking-container {
+  padding: 60px;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+.booking-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style for text inputs, email, number, date */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #1f2937; /* darkish background for inputs */
+  color: white;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: #9ca3af; /* light gray placeholder */
+}
+
+/* Label styling for number input */
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: white;
+}
+
+/* Small text under label */
+.booking-form small {
+  color: #d1d5db;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+/* Button styling */
+.booking-form button {
+  padding: 14px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.booking-form button:hover {
+  background-color: #0ea5e9;
+}
+/* ===== Booking Page Responsive ===== */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form button {
+    width: 100%;
+  }
+}

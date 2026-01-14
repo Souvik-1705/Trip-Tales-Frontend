@@ -1,0 +1,52 @@
+.profile-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.profile-container h1 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+/* Info text */
+.profile-container p {
+  font-size: 18px;
+  color: #334155;
+  margin: 10px 0;
+}
+
+/* Optional avatar */
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #38bdf8;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ===== Profile Page Responsive ===== */
+@media (max-width: 480px) {
+  .profile-container {
+    margin: 40px 15px;
+    padding: 30px 20px;
+  }
+
+  .profile-container h1 {
+    font-size: 26px;
+  }
+
+  .profile-container p {
+    font-size: 16px;
+  }
+}

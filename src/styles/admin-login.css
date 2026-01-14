@@ -1,0 +1,46 @@
+.admin-login-container {
+  padding: 60px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-login-form input {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.admin-login-form button {
+  padding: 14px;
+  background-color: #38bdf8;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-login-form button:hover {
+  background-color: #0ea5e9;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+/* ===== Auth Pages Responsive ===== */
+@media (max-width: 480px) {
+  .auth-container,
+  .admin-login-container {
+    margin: 40px 15px;
+    padding: 25px 20px;
+  }
+
+  .auth-container h1 {
+    font-size: 22px;
+  }
+}

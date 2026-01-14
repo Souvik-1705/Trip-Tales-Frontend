@@ -1,0 +1,80 @@
+.auth-container {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input {
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    outline: none;
+}
+
+.auth-container input:focus {
+    border-color: #2563eb;
+}
+
+.auth-container button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #1e40af;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.auth-redirect {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.auth-redirect a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-redirect a:hover {
+    text-decoration: underline;
+}
+/* ===== Auth Pages Responsive ===== */
+@media (max-width: 480px) {
+  .auth-container,
+  .admin-login-container {
+    margin: 40px 15px;
+    padding: 25px 20px;
+  }
+
+  .auth-container h1 {
+    font-size: 22px;
+  }
+}

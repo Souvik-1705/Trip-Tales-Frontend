@@ -1,0 +1,69 @@
+.details-container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.details-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.details-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.details-content .country {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.details-content .description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.details-content .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.book-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #0ea5e9;
+}
+/* ===== Destination Details Responsive ===== */
+@media (max-width: 768px) {
+  .details-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .details-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-content h1 {
+    font-size: 26px;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+}
